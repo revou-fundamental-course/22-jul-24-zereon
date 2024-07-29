@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width", initial-scale="1.0">
-    <title>Document</title>
+    <title>Your Travel Agent</title>
     <link rel="stylesheet" href="css\styles.css">
-
 </head>
 
 <body>
-    <nav>
+    <nav style="border-bottom: 1px solid; border-bottom-color: darkgrey;">
         <header>
             <div class="logo-icon"></div>
         </header>
@@ -22,35 +20,60 @@
         </section>
     </nav>
 
-    <main>
+    <main style="padding-left: 16px;">
         <article class="main title">
+            <div class="main-title-judul">
             <header>
-                <h1>Your Trusted Travel Agent</h1>
+                <h1 style="margin-bottom: 10px;">Your Trusted Travel Agent</h1>
             </header>
-
-            <p>Your happiness is our happiness.</p>
+            <p style="margin-top: 10px;">Your happiness is our happiness.</p>
+            </div>
 
         </article>
 
         <section class="main-content">
             <article class="main-content-item">
                 <div class="main-content-banner"></div>
-                
+                <p></p>
+                <p style="color: grey; font-style: italic; margin: 0%;">Liburan jadi menyenangkan bersama travel agentku!</p>
                 <div class="main-item">
+
                     <div class="item-icon"></div>
 
                     <div>
-                        <h3>Lorem Ipsum Dolor</h3>
-                        <p>Lorem Ipsum Dolor</p>
+                        <h3 style="margin-bottom: 1px;">Florence Hughes</h3>
+                        <p style="margin-top: 1px; font-size: smaller; font-style: italic;">Ibu Rumah Tangga, 28</p>
                     </div>
                 </div>
 
             </article>
 
             <form class="main-content-item">
-                    <input type="text" />
-                    <button type="button">Submit</button>
+                <article class="main-contactus">
+                    <h2 style="margin-top: 0;">Contact Us</h2>
+                    <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
+                    <p></p>
+                    <p></p>
 
+                        <div class="fillbox">
+                          <label for="yname">Your Name</label>
+                          <input type="text" id="yname" name="yourname" placeholder="First and last name">
+                          <p></p>
+                          <label for="yemail">Your Email</label>
+                          <input type="text" id="yemail" name="youremail" placeholder="example@email.com">
+                          <p></p>
+                          <label for="interest">What are you interested in?</label>
+                          <select id="country" name="country">
+                            <option value="select">Select option</option>
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                          </select>
+                          <p></p>
+                          <button type="button">Send</button>
+                        </div>
+                    
+                </article>
             </form>
 
         </section>
