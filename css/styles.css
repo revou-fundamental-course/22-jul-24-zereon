@@ -63,7 +63,7 @@ nav {
 .item-icon {
     height: 25px;
     width: 25px;
-    background-image: url(https://picsum.photos/25);
+    background-image: url(https://picsum.photos/10);
     border-radius: 50%;}
 
 .main-item {
@@ -93,8 +93,37 @@ button {
 }
     
 .num-icon1{
-    height: 25px;
-    width: 25px;
-    background-image: url(/css/num1.png);
+    height: 15px;
+    width: 15px;
+    background-image: url(https://picsum.photos/20);
     border-radius: 50%;
+}
+
+.num-icon2{
+    height: 15px;
+    width: 15px;
+    background-image: url(https://picsum.photos/30);
+    border-radius: 50%;
+}
+
+.num-icon3{
+    height: 15px;
+    width: 15px;
+    background-image: url(https://picsum.photos/40);
+    border-radius: 50%;
+}
+
+.why-ytta1{
+    display: flex;
+    align-items: center;
+}
+
+.why-ytta2{
+    display: flex;
+    align-items: center;
+}
+
+.why-ytta3{
+    display: flex;
+    align-items: center;
 }
