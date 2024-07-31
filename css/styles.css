@@ -66,11 +66,11 @@ nav {
 }
 
 button {
-    width: 75%;
     height: 32px;
-    background-color: aliceblue;
+    background-color: rgb(3, 52, 95);
     border: 1px solid;
-}
+    color: aliceblue;
+    }
     
 .alasan{
     display: flex;
@@ -137,15 +137,74 @@ button {
     .isi-paket{
         display:flex;
         flex-direction: row;
+        justify-content: center;
     }
 
+    .kurungan-paket{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+    }
 
+    .kota-bdg {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
 
-/* .footer { 
-    position: fixed;
+    .desk-bdg {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .kota-sby {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .desk-sby {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .kota-dps {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+
+    .desk-dps {
+       display: flex;
+       flex-direction: column;
+    }
+
+    .isi-kota{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+.centerbutton{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    }
+
+.container {
+    height: 40px;
+    position: relative;
+    border: 3px;
+    }
+
+.footer { 
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(128, 126, 126);
     text-align: center;
-    } */
+    }
