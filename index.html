@@ -10,7 +10,8 @@
 <body>
     <nav style="border-bottom: 1px solid; border-bottom-color: darkgrey;">
         <header>
-            <div class="logo-icon"></div>
+            <!-- <div class="logo-icon"></div> -->
+             <img class="logo" alt="plane-logo" src="./assets/Logopesawat.png" />
         </header>
 
         <section class="nav-container">
@@ -33,7 +34,52 @@
 
         <section class="main-content">
             <article class="main-content-item">
-                <div class="main-content-banner"></div>
+                <!-- <div class="main-content-banner"></div> -->
+                 <div>
+                    <img
+                        class="img-slideshow" height="250px"
+                        src="https://wallpapers.com/images/high/travel-hd-4zjwrepl0mzn70nd.webp" 
+                    />
+                    <img
+                        class="img-slideshow" height="250px"
+                        src="https://wallpapers.com/images/high/travel-with-sunset-r13bbdwzr4jog45w.webp" 
+                    />
+                    <img
+                        class="img-slideshow" height="250px"
+                        src="https://wallpapers.com/images/high/travel-pastel-colored-building-z5pfy4ffi5zvt7ep.webp" 
+                    />
+                    <p></p>
+
+                    <!-- <button onclick="plusDivs(-1)">Previous</button>
+                    <button onclick="plusDivs(+1)">Next</button> -->
+                 </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n){
+                        showDivs((slideIndex += n));
+                    }
+                    
+                function showDivs(n){
+                    var i;
+                    var imgList = document.getElementsByClassName("img-slideshow");
+                    if(n > imgList.length) slideIndex = 1;
+                    else if (n < 1) slideIndex = imgList.length;
+
+                    for(i = 0; i < imgList.length; i++) {
+                        imgList[i].style.display = "none";
+                    }
+                    imgList[slideIndex - 1].style.display = 'block';
+                }
+
+                setInterval(() => {
+                    plusDivs(1);
+                }, 1000);
+
+                </script>
+
                 <p></p>
                 <p style="color: grey; font-style: italic; margin: 0%;">Liburan jadi menyenangkan bersama travel agentku!</p>
                 <div class="main-item">
@@ -77,22 +123,22 @@
         </article>
     </main>
     <div>
-        <p style="margin-top: 50px; margin-bottom: 0px; margin-left: 200px;">__________</p>
+        <p style="margin-top: 150px; margin-bottom: 0px; margin-left: 200px;">__________</p>
         <h3 style="margin-left: 24px;">Alasan kenapa memilih Your Trusted Travel Agent (YTTA)</h3>
         </div>
 
             <div class="why-ytta1">
-            <div class="num-icon1"></div>
+            <img class="num-icon1" src="./assets/num1.png" height="30px"/>
             <p style="margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">Kami mengutamakan kepuasan pelanggan sebagai prioritas utama kami.</p>
             </div>
 
             <div class="why-ytta2">
-            <div class="num-icon2"></div>
+            <img class="num-icon2" src="./assets/num2.png" height="30px"/>
             <p style="margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">Armada kami terdiri dari kendaraan-kendaraan modern yang terawat dengan baik dan dilengkapi dengan fasilitas yang nyaman.</p>
             </div>
 
             <div class="why-ytta3">
-            <div class="num-icon3"></div>
+            <img class="num-icon3" src="./assets/num3.png" height="30px"/>
             <p style="margin-left: 5px; margin-top: 5px; margin-bottom: 5px;">Kami menawarkan harga yang kompetitif dan terjangkau untuk semua rute perjalanan kami.</p>
             </div>
 
