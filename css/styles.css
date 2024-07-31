@@ -13,7 +13,10 @@ nav {
 
 .nav-container {
     display: flex;
-    
+}
+
+.head-bar{
+    display: flex;
 }
 
 .nav-item {
@@ -34,11 +37,10 @@ nav {
 
 .main-content {
     display: flex;
+    justify-content: center;
 }
 
 .main-content-item {
-    width: 100%;
-    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -206,4 +208,22 @@ button {
     bottom: 0;
     width: 100%;
     text-align: center;
+    }
+
+    @media only screen and (max-width: 480px) {
+        .main-content {
+            flex-direction: column;
+        }
+
+        .head-bar {
+            flex-direction: column;
+        }
+
+        .main-contactus {
+            margin-top: 30px;
+        }
+
+        .img-slideshow {
+            width: 450px;
+        }
     }
