@@ -112,7 +112,7 @@
 
             </article>
 
-            <form class="main-content-item">
+            <form class="main-content-item" name="message-form">
                 <article class="main-contactus">
                     <h2 style="margin-top: 0;">Contact Us</h2>
                     <p>Sales akan menghubungi anda 1x24 jam setelah data kami terima.</p>
@@ -121,10 +121,10 @@
 
                         <div class="fillbox">
                           <label for="yname">Your Name</label>
-                          <input type="text" id="yname" name="yourname" placeholder="First and last name">
+                          <input type="text" id="name-input" placeholder="First and last name">
                           <p></p>
                           <label for="yemail">Your Email</label>
-                          <input type="text" id="yemail" name="youremail" placeholder="example@email.com">
+                          <input type="text" id="email-input" placeholder="example@email.com">
                           <p></p>
                           <label for="interest">What are you interested in?</label>
                           <select id="country" name="country">
@@ -134,7 +134,8 @@
                             <option value="usa">USA</option>
                           </select>
                           <p></p>
-                          <button type="button">Send</button>
+                          <p id="error-name" style="margin: 0; color: crimson;"></p>
+                          <button id="btn-submit" onclick="formValidation();" type="button">Send</button>
                         </div>
                     </article>
             </form>
@@ -218,8 +219,11 @@
         
         <div class="container">
             <div class="centerbutton">
-                <button>CALL TO ACTION</button>
+                <button id="btn-call"onclick="callAction()">CALL TO ACTION</button>
+                <p></p>
+                <p id="call-email" style="margin-top: 1px; text-align: center; color:blue;"></p>
             </div>
+            
         </div>
 
     </main>
@@ -230,6 +234,6 @@
         <p style="color: gray; font-size: small;">© 2024 YTTA</p>
         
     </div>
-
+<script src="js\script.js"></script>
 </body>
 </html>
