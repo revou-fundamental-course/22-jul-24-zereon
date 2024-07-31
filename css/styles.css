@@ -53,6 +53,11 @@ nav {
     justify-content: center;
 }
 
+.img-slideshow{
+    width: 850px;
+    height: 480px;
+}
+
 .main-contactus{
     font-size: 80%;
     border-radius: 5px;
@@ -224,6 +229,7 @@ button {
         }
 
         .img-slideshow {
-            width: 450px;
+            width: 480px;
+            height: 250px;
         }
     }
